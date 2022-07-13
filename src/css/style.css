@@ -1,0 +1,313 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* ====================================================
+                       1 Common css
+======================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-size: 10px;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  text-rendering: optimizeLegibility;
+  color: #a6a6a6;
+}
+
+a {
+  text-decoration: none;
+}
+.main-color {
+  color: #0845af;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+  font-weight: 700;
+  color: #000;
+}
+.tap-container {
+  width: 1080px;
+  margin: auto auto;
+}
+/* ============================================
+                    index.html css start
+================================================ */
+
+.header-logo img {
+  font-family: Inter;
+  font-weight: bold;
+  color: #0845af !important;
+  width: 80px;
+}
+.navbar {
+  height: 90px;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+}
+.header-link {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+}
+.header-link:hover {
+  color: #fff;
+}
+
+/* ==========================================
+header section 
+=================================================*/
+
+/*======================================== banner section 
+===========================================*/
+
+.heru-section {
+  background-image: url("/src/img/pexels-huseyn-kamaladdin-667838.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+.heru-section-overlay {
+  background: rgba(10, 11, 11, 0.221);
+  height: 750px;
+}
+.collum-one {
+  background-image: url("/src/img/thumbsupdai_2_400x600.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 750px;
+}
+
+.heru-info {
+  text-align: center;
+  position: absolute;
+  top: 400px;;
+}
+.heru-title-top {
+  font-size: 24px;
+  color: #fff;
+}
+.heru-title-bottom {
+  font-size: 34px;
+  color: #fff;
+  font-weight: 400 !important;
+}
+.collum-two{
+  padding-top: 100px;
+}
+.contact-form {
+  max-width: 500px;
+ padding-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 100px;
+  float: right;
+}
+.contact-form input {
+  font-family: Inter;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* Immigrate section  */
+
+.immigrate-title::after {
+  position: absolute;
+  bottom: 38px;
+  border-bottom: 1px solid red;
+  content: "";
+  width: 120px;
+  left: 45%;
+  
+}
+.immigrate-title {
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+}
+.immigrate-title h1 {
+  font-size: 45px;
+  padding-bottom: 40px;
+}
+.immigrate-icon {
+  width: 100px;
+  height: 100px;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+.immigrate-icon i{
+  font-size: 35px;
+  color:red;
+}
+.immirate-body{
+  padding: 30px;
+}
+.immirate-body h3{
+ font-size: 34px;
+ font-family: Inter;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.immirate-body p {
+ font-size: 18px;
+ font-family: Inter;
+}
+
+
+/* about-section  */
+/* about-section  */
+/* about-section  */
+
+
+
+.about-section{
+  padding: 80px 0;
+}
+
+
+
+/* review section  */
+.review-section{
+  margin-bottom: 100px;
+}
+.review-title h1{
+  font-size: 45px;
+  margin-bottom: 60px;
+  text-align: cener;
+
+}
+.review-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.review-title::after {
+  position: absolute;
+  bottom: -10px;
+  border-bottom: 1px solid red;
+  content: "";
+  width: 100px;
+  text-align: center;
+  left:45%;
+
+}
+.footer-section{
+  padding: 60px 0px 0px 0px;
+  vertical-align: middle;
+  background: #000;
+}
+/* ===============================================================================================================================Responsive css for tab 
+============================================================================================================================= */
+
+@media only screen and (max-width: 1080px) {
+  .heru-info {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .heru-title-top {
+    font-size: 24px;
+    color: #fff;
+  }
+  .heru-title-bottom {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 400 !important;
+  }
+   .contact-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    border:2px solid rgba(0, 0, 0, 0.152)
+  }
+
+  .review-title::after {
+  left:44%;
+
+}
+.immigrate-title::after {
+  left:44%;
+  
+}
+}
+
+/* ===============================================================================================================================Responsive css for mobile 
+============================================================================================================================= */
+
+@media only screen and (max-width: 767px) {
+  .contact-form {
+    max-width: 500px;
+
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .heru-info {
+    margin-top: -40%;
+    text-align: center;
+  }
+  .collum-one {
+  background-image: url("/src/img/thumbsupdai_2_400x600.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 460px;
+}
+.heru-section {
+  background-image: url("/src/img/pexels-huseyn-kamaladdin-667838.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+}
+.heru-section-overlay {
+  background: rgba(3, 251, 206, 0.266);
+  height: 460px;
+}
+.immigrate-section{
+  margin-top: 600px;
+}
+.review-title::after {
+  left:37%;
+
+}
+.immigrate-title::after {
+  left:37%;
+  
+}
+
+}
